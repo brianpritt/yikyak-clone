@@ -10,8 +10,9 @@
       <a href="#">Send User Message</a>
 
       <hr>
+      {{update-question message=message update="update"}}
       <button class="btn" {{action 'delete' message}}>Delete message</button>
-      <button class="btn" {{action 'delete' message}}>Edit message</button>
+      <button class="btn" {{action 'update' message}}>Edit message</button>
     </div>
   </div>
 </div>

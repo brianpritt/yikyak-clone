@@ -4,7 +4,7 @@
 <ul>
   <div class="row">
     {{#each model messages as |message|}}
-      {{message-tile message=message destroyMessage="destroyMessage"}}
+      {{message-tile message=message update="update" destroyMessage="destroyMessage"}}
       {{/each}}
 </div>
 </ul>
