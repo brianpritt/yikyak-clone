@@ -1,0 +1,26 @@
+{ "messages":[{
+    "title" : "Bro, it's so cold",
+    "body" : "Portland is so cold and snowy.  I'm cold AF!  Where all the warm ladies at?",
+    "author": "SwoleBro",
+    "notes": "hmu",
+    "rating" : -3,
+    "tags": "trashtalker"
+  },{
+    "title" : "My car won't start",
+    "body" : "I put the key in and turn it, but nothing happens.  What is my problem?",
+    "author": "ConfusedInPortland",
+    "notes": "The needle is at E on the gas gauge, is that important?",
+    "rating" : 5,
+    "tags": "car"
+  },{
+    "title" : "Milk Substitue?",
+    "body" : "I think my cows are allergic to milk.  Is this a normal thing, or do I have a serious problem?",
+    "author": "Cow lover",
+    "notes": "My cats love it.",
+    "rating" : 3,
+    "tags": "CowLover"
+  }
+
+]
+
+}

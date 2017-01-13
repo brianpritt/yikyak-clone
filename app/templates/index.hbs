@@ -1,1 +1,11 @@
-{{outlet}}
+<div class="container">
+  {{new-message saveMessage="saveMessage"}}
+
+<ul>
+  <div class="row">
+    {{#each model messages as |message|}}
+      {{message-tile message=message destroyMessage="destroyMessage"}}
+      {{/each}}
+</div>
+</ul>
+</div>
