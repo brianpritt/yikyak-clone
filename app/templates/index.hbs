@@ -3,9 +3,15 @@
 
 <ul>
   <div class="row">
-    {{#each model messages as |message|}}
+    {{#each model.messages as |message|}}
       {{message-tile message=message update="update" destroyMessage="destroyMessage"}}
       {{/each}}
-</div>
+    </div>
+</ul>
+<ul>
+  {{#each model.replies as |reply|}}
+    <li>{{reply.author}} - {{reply.body}}</li>
+  {{/each}}
+
 </ul>
 </div>

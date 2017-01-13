@@ -5,6 +5,7 @@
       <h6>Author: {{message.author}}</h6>
       <hr>
       <p>{{message.body}}</p>
+
     </div>
     <div class="card-action">
       <a href="#">Send User Message</a>
@@ -16,3 +17,9 @@
     </div>
   </div>
 </div>
+
+<ul>
+  {{#each message.replies as |reply|}}
+    {{reply-tile reply=reply}}
+  {{/each}}
+</ul>

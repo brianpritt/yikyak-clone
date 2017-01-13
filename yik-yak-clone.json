@@ -19,8 +19,15 @@
     "notes": "My cats love it.",
     "rating" : 3,
     "tags": "CowLover"
-  }
-
-]
+  }],
+  "replies":[{
+    "author": "kellie",
+    "rating": "2",
+    "body": "The ladies are as far away from you as possible"
+  },{
+    "author":"jillyJam",
+    "rating":"4",
+    "body":"what kind of milk are you feeding them?"
+  }]
 
 }

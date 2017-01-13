@@ -12,7 +12,8 @@ export default Ember.Component.extend({
         body: this.get('body'),
         author: this.get('author'),
         notes: this.get('notes'),
-        tags: this.get('tags'),
+        tags: this.get('tag'),
+        rating: 0,
       };
       this.set('addNewMessage', false);
       this.sendAction('saveMessage', params);
