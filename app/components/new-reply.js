@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     replyFormShow() {
       this.set('addNewReply', true);
     },
+    replyFormHide() {
+      this.set('addNewReply', false);
+    },
     saveReply() {
      var params = {
        author: this.get('author'),
