@@ -1,18 +1,19 @@
-{{#if addNewReply}}
-<h1>Reply</h1>
-  <div>
-    <form>
-      <div class="form-group">
-        <label for="author">Author</label>
-        {{input value=author id="author"}}
-      </div>
-      <div class="form-group">
-        <label for="body">Reply</label>
-        {{input value=body id="body"}}
-      </div>
-      <button class="btn" {{action 'saveReply'}}>Submit</button>
-    </form>
-  </div>
-{{else}}
-  <button class="btn" {{action 'replyFormShow'}}>Reply</button>
-{{/if}}
+
+  {{#if addNewReply}}
+    <div id="margin-it">
+      <h3>Reply</h3>
+      <form>
+        <div class="input-field col s12">
+          <label for="author">Author</label>
+          {{input value=author id="author"}}
+        </div>
+        <div class="input-field col s12">
+          <label for="body">Reply</label>
+          {{input value=body id="body"}}
+        </div>
+        <button class="btn " {{action 'saveReply'}}>Submit</button>
+      </form>
+    </div>
+  {{else}}
+    <button class="btn purple" {{action 'replyFormShow'}}>Reply</button>
+  {{/if}}

@@ -1,0 +1,10 @@
+#message-button{
+  margin-top: 25px;
+}
+#delete-button, #edit-button{
+  display: block;
+  margin-top: 5px;
+}
+#margin-it{
+  margin: 100px;
+}

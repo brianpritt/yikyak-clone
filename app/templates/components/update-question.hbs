@@ -1,34 +1,35 @@
 {{#if updateMessageForm}}
   <div>
     <form>
-      <div class="form-group">
+      <div class="input col s6">
         <label for="title">Title</label>
         {{input value=title id="title" placeholder=message.title}}
       </div>
 
-      <div class="form-group">
+      <div class="input col s6">
         <label for="author">Author</label>
         {{input value=author id="author" placeholder=message.author}}
       </div>
 
-      <div class="form-group">
+      <div class="input col s12">
         <label for="body">Body</label>
         {{input value=body id="body" placeholder=message.body}}
       </div>
 
-      <div class="form-group">
+      <div class="input col s6">
         <label for="notes">Notes</label>
         {{input value=notes id="notes" placeholder=message.notes}}
       </div>
 
-      <div class="form-group">
+      <div class="input col s6">
         <label for="tag">Tags</label>
         {{input value=tag id="tag" placeholder=message.tag}}
       </div>
 
-      <button class="btn" {{action 'update' message}}>Save Edit</button>
+      <button class="btn" id="save-button" {{action 'update' message}}>Save Edit</button>
+      <button class="btn"{{action 'updateMessageFormHide'}}>Cancel</button>
     </form>
   </div>
 {{else}}
-  <button class="btn" {{action 'updateMessageForm'}}>Edit Message</button>
+  <button class="btn purple" id="edit-button" {{action 'updateMessageForm'}}>Edit Message</button>
 {{/if}}

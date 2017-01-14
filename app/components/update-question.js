@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     updateMessageForm() {
       this.set('updateMessageForm', true);
     },
+    updateMessageFormHide(){
+      this.set('updateMessageForm', false);
+    },
     update(message) {
       var params = {
         title: this.get('title'),

@@ -1,7 +1,6 @@
 # yik-yak-clone
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application is a basic question and answer message board.  It uses Node.js, Ember, and Google Firebase.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/brianpritt/yikyak-clone>` this repository
 * `cd yik-yak-clone`
 * `npm install`
 * `bower install`
@@ -25,9 +24,7 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
@@ -39,9 +36,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### Known Bugs
+_No known bugs at last commit_
 
-Specify what it takes to deploy your app.
+
+### License
+* GPLv3
 
 ## Further Reading / Useful Links
 

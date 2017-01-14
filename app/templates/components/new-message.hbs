@@ -1,35 +1,36 @@
 {{#if addNewMessage}}
-  <h1>New message</h1>
-  <div>
+  <h4>New Question</h4>
+  <div class="row">
     <form>
-      <div class="form-group">
+      <div class="input-field col s6">
         <label for="title">Title</label>
         {{input value=title id="title"}}
       </div>
 
-      <div class="form-group">
+      <div class="input-field col s6">
         <label for="author">Author</label>
         {{input value=author id="author"}}
       </div>
 
-      <div class="form-group">
+      <div class="input-field col s12">
         <label for="body">Question</label>
         {{input value=body id="body"}}
       </div>
 
-      <div class="form-group">
+      <div class="input-field col s6">
         <label for="notes">Additional Notes</label>
         {{input value=notes id="notes"}}
       </div>
 
-      <div class="form-group">
+      <div class="input-field col s6">
         <label for="tag">Tag</label>
         {{input value=tag id="tag"}}
       </div>
 
-      <button {{action 'saveMessage'}}>Save</button>
+      <button class="btn" {{action 'saveMessage'}}>Save</button>
+      <button class="btn"{{action 'messageFormHide'}}>Cancel</button>
     </form>
   </div>
 {{else}}
-  <button class="btn" {{action 'messageFormShow'}}>New Mesage</button>
+  <button class="btn" id="message-button"{{action 'messageFormShow'}}>New Question</button>
 {{/if}}

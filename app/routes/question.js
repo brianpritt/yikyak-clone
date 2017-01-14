@@ -24,8 +24,12 @@ export default Ember.Route.extend({
     this.transitionTo('index');
   },
     destroyMessage(message){
-      message.destroyRecord();
+      var reply_deletions = message.get('replies').map(function(reply){return reply.destroyRecord();
+      });
+      Ember.RSVP.all(reply_deletions).then(function() {
+        return message.destroyRecord();
+      });
       this.transitionTo('index');
-    }
+    },
   }
 });
