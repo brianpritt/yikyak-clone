@@ -5,10 +5,12 @@
       <form>
         <div class="input-field col s12">
           <label class="teal-text text-darken-2"for="author">Author</label>
+          <br>
           {{input value=author id="author"}}
         </div>
         <div class="input-field col s12">
           <label class="teal-text text-darken-2"for="body">Reply</label>
+          <br>
           {{input value=body id="body"}}
         </div>
         <button class="btn " {{action 'saveReply'}}>Submit</button>

@@ -1,9 +1,9 @@
 {
   "name": "yik-yak-clone",
-  "version": "0.0.0",
+  "version": "0.9.0",
   "description": "Small description for yik-yak-clone goes here",
-  "license": "MIT",
-  "author": "",
+  "license": "GPLv3",
+  "author": "Brian PrittS",
   "directories": {
     "doc": "doc",
     "test": "tests"
